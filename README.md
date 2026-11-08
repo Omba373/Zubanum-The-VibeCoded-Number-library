@@ -152,6 +152,33 @@ with an independent implementation, plus identities the reference cannot state â
 Gamma's reflection formula, `P + Q = 1`, Gauss duplication, the digamma recurrence,
 Pascal's rule, and the forward trip of every root. 425 checks, 0 failures.
 
+## In this repository
+
+| file | what it is |
+| --- | --- |
+| `ZubaNum.js` | the library - one file, no dependencies |
+| `buza.js` | companion module: Gamma, decimal factorials, advanced roots |
+| `ZubaNum.luau`, `buza.luau` | the same two modules for a game runtime |
+| `examples/quickstart.js` | the tour above, runnable |
+| `examples/ladder_order.js` | the ladders listed, the cap, and the ordering |
+| `examples/tycoon_loop.js` | a growth loop whose numbers leave the double range |
+| `examples/browser.html` | the library in a page, no bundler |
+| `docs/API.md` | every export, grouped, with printed examples |
+| `docs/NOTATION.md` | what the readers accept |
+| `docs/PRECISION.md` | what is exact, where it stops, and how to tell |
+| `docs/LADDERS.md` | the -illion and -plex rule and the cap |
+| `docs/GAMES.md` | wiring it into an incremental game |
+| `docs/BUZA.md` | the companion module, and what each function refuses |
+| `CHANGELOG.md` | what changed in each version |
+
+The three `.js` examples print the output the docs quote:
+
+```
+node examples/quickstart.js
+node examples/ladder_order.js
+node examples/tycoon_loop.js
+```
+
 ## License
 
 See `LICENSE`.
