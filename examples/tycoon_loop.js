@@ -4,15 +4,9 @@
 const ZubaNum = require("../ZubaNum.js");
 const Z = ZubaNum;
 
-function walletAfter(levels, first, ratio, income) {
-    const cost = Z.geoSum(first, ratio, levels);
-    const earned = Z.mul(Z.fromNumber(income), Z.fromNumber(levels));
-    return { cost, earned, net: Z.sub(earned, cost) };
-}
-
 console.log("step   cost of that step   total spent   wallet");
 let wallet = Z.fromNumber(100);
-let first = 10;
+const first = 10;
 const ratio = 2;
 for (let step = 1; step <= 8; step++) {
     const price = Z.geoTerm(first, ratio, step);
