@@ -1,7 +1,7 @@
 {
   "name": "zubanum",
   "version": "2.3.0",
-  "description": "A big-number library that holds values past the double range: towers, named illions and -plexes, hyperoperations, BEAF, Hyper-E, TREE(3)/LOADER/BB/RAYO/FISH7, cardinals and ordinal towers.",
+  "description": "Big-number library for growth loops: googol-scale towers, Knuth arrows, ordinal and named families such as TREE and SSCG, the composed -illion and -plex ladders, and exact ordering across every scale at once.",
   "main": "ZubaNum.js",
   "exports": {
     ".": "./ZubaNum.js",
@@ -10,27 +10,29 @@
   "files": [
     "ZubaNum.js",
     "buza.js",
-    "docs/",
-    "examples/",
+    "ZubaNum.luau",
+    "buza.luau",
+    "docs",
+    "examples",
     "CHANGELOG.md"
   ],
   "scripts": {
-    "quickstart": "node examples/quickstart.js"
-  },
-  "engines": {
-    "node": ">=14"
+    "quickstart": "node examples/quickstart.js",
+    "ladder": "node examples/ladder_order.js",
+    "tycoon": "node examples/tycoon_loop.js"
   },
   "keywords": [
     "big-number",
     "googology",
+    "incremental-game",
     "hyperoperation",
-    "tetration",
-    "beaf",
-    "fast-growing-hierarchy",
+    "knuth-arrow-notation",
     "ordinals",
-    "cardinals",
-    "incremental-game"
+    "tree-sscg",
+    "roblox"
   ],
-  "dependencies": {},
-  "devDependencies": {}
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }
