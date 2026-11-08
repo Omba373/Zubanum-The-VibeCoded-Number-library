@@ -1,0 +1,36 @@
+{
+  "name": "zubanum",
+  "version": "2.3.0",
+  "description": "A big-number library that holds values past the double range: towers, named illions and -plexes, hyperoperations, BEAF, Hyper-E, TREE(3)/LOADER/BB/RAYO/FISH7, cardinals and ordinal towers.",
+  "main": "ZubaNum.js",
+  "exports": {
+    ".": "./ZubaNum.js",
+    "./buza": "./buza.js"
+  },
+  "files": [
+    "ZubaNum.js",
+    "buza.js",
+    "docs/",
+    "examples/",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "quickstart": "node examples/quickstart.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "big-number",
+    "googology",
+    "hyperoperation",
+    "tetration",
+    "beaf",
+    "fast-growing-hierarchy",
+    "ordinals",
+    "cardinals",
+    "incremental-game"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

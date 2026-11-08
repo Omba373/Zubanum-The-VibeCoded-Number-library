@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZubaNum in the browser</title>
+</head>
+<body>
+<h1>ZubaNum</h1>
+<p>Open the console. Everything below runs on load.</p>
+
+<script src="ZubaNum.js"></script>
+<script>
+    const Z = window.ZubaNum;
+
+    console.log(Z.new(1e308).mul(1e10).format());     // past a double, still one type
+    console.log(Z.fromName("googolplex").format());   // 10^10^10^2
+    console.log(Z.cmp(Z.fromName("mehectillion"), Z.fromName("googolplex")));   // 1
+    console.log(Z.toName(1e33));                      // decillion
+    console.log(Z.spend(Z.tree(4), Z.tree(3)).count.format());                  // TREE(4)
+</script>
+
+<!-- buza.js is the analysis companion; it requires ZubaNum.js, so load them in order -->
+<script src="buza.js"></script>
+<script>
+    if (window.buza) {
+        console.log(window.buza.factorialDec(0.5).format());   // 0.8862269255
+    }
+</script>
+</body>
+</html>
